@@ -10,7 +10,7 @@ Using pip:
 
 ::
 
-    pip install <TAR>
+    pip install https://github.com/robertjoosten/maya-pip/archive/v0.1.0.tar.gz
 
 If you prefer to install from source code use:
 
