@@ -23,9 +23,12 @@ executables and uses those to execute the pip command. Using the Maya python
 executables the packages will be installed in the site-packages directory of 
 the chosen version of Maya.
 
-From the command line:
+Command line:
 
-    mayapip -h              will print the default help from the pip command
+    mayapip -h              
+        will print the default help from the pip command
     
-    Additional arguments:
-	--maya_version:         which version of Maya to use ( only needs to be provided if multiple version of Maya are installed )
+Maya arguments:
+
+	--maya_version:         
+        which version of Maya to use ( only needs to be provided if multiple version of Maya are installed )
