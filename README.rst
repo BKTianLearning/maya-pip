@@ -12,7 +12,7 @@ Using pip:
 
 If you prefer to install from source code use:
 
-    cd maya-pip/
+    cd maya-pip
     python setup.py install
 
 Usage
@@ -30,5 +30,5 @@ Command line:
     
 Maya arguments:
 
-	--maya_version:         
+	--maya_version       
         which version of Maya to use ( only needs to be provided if multiple version of Maya are installed )
