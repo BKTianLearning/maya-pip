@@ -1,7 +1,7 @@
 mayapip
 =======
 
-The Maya tool for installing Python packages.
+The Maya wrapper to pip_ for installing Python packages.
 
 Installation
 ------------
@@ -19,16 +19,49 @@ Usage
 -----
 
 This tool is a wrapper around pip. The tool will find the Maya python 
-executables and uses those to execute the pip command. Using the Maya python
-executables the packages will be installed in the site-packages directory of 
+executables and uses it to execute the pip command. By using the Maya python
+executable the packages will be installed in the site-packages directory of 
 the chosen version of Maya.
 
 Command line:
 
-    mayapip -h              
-        will print the default help from the pip command
-    
-Maya arguments:
+**mayapip**
 
-	--maya_version       
-        which version of Maya to use ( only needs to be provided if multiple version of Maya are installed )
+-h            	will print the default help from the pip command
+--maya_version	which version of Maya to use ( only needs to be provided if multiple version of Maya are installed )
+
+Limitations
+-----------
+
+At the moment this version of mayapip will only work on Windows, this is 
+because I dont have any of the other platforms at my disposal. Feel free
+to implement solution for Mac and Linux in the maya directory and submit
+a pull request.
+
+Examples
+--------
+
+::
+
+	mayapip install pyyaml==3.11 --maya_version=2017
+	>>> Successfully installed pyyaml-3.11
+	
+	# in maya 2017
+	import yaml; print yaml.__version__
+	>>> 3.11
+	
+::
+
+	mayapip install pyyaml==3.13 --maya_version=2018
+	>>> Successfully installed pyyaml-3.13
+	
+	# in maya 2018
+	import yaml; print yaml.__version__
+	>>> 3.13
+	
+::
+
+	mayapip uninstall pyyaml --maya_version=2018
+	>>> Successfully uninstalled PyYAML-3.13
+	
+.. _pip: https://github.com/pypa/pip
