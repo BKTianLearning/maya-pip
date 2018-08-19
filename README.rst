@@ -45,6 +45,8 @@ a pull request.
 Examples
 --------
 
+Installing an older version of pyyaml on Maya 2017.
+
 ::
 
 	mayapip install pyyaml==3.11 --maya_version=2017
@@ -53,15 +55,19 @@ Examples
 	# in maya 2017
 	import yaml; print yaml.__version__
 	>>> 3.11
-	
+
+Installing the latest version of pyyaml on Maya 2018.
+
 ::
 
-	mayapip install pyyaml==3.13 --maya_version=2018
+	mayapip install pyyaml --maya_version=2018
 	>>> Successfully installed pyyaml-3.13
 	
 	# in maya 2018
 	import yaml; print yaml.__version__
 	>>> 3.13
+	
+Uninstalling pyyaml from Maya 2018, leaving the Maya 2017 environment intact.
 	
 ::
 
