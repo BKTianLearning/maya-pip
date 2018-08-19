@@ -8,9 +8,13 @@ Installation
 
 Using pip:
 
+::
+
     pip install <TAR>
 
 If you prefer to install from source code use:
+
+::
 
     cd maya-pip
     python setup.py install
