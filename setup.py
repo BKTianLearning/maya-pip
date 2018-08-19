@@ -45,7 +45,7 @@ setup(
         exclude=["contrib", "docs", "tests*", "tasks"],
     ),
     license="MIT",
-    description="The Maya tool for installing Python packages",
+    description="The Maya wrapper to pip for installing Python packages",
     long_description=long_description,
     keywords="pip maya",
     entry_points={
