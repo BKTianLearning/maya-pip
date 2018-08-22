@@ -11,6 +11,18 @@ from mayapip._internal import maya
 
 
 def main(args=None):
+    """
+    Main function will find the right maya python executable and pip install 
+    using the maya python executable all of the remaining commands in pip.
+    The arguments will be processed using the parseopts function that comes
+    with pip. This will give you a detailed breakdown of any potential error.
+    
+    The --maya_version argument is not documented when using the -h argument,
+    the reason for this is that it is much preferred to have access to the 
+    pip help instead.
+    
+    :param None/list args
+    """
     # get arguments
     if args is None:
         args = sys.argv[1:]
@@ -41,7 +53,7 @@ def main(args=None):
         message = (
             "Multiple versions of Maya found ({0}).\n"
             "Use the --maya_version argument to "
-            "specify the version you would with to use."
+            "specify the version you would like to use."
         ).format(maya_versions_string)
         
         raise RuntimeError(message)
