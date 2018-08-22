@@ -3,6 +3,15 @@ import _winreg
 
 
 def get_python_executables():
+    """
+    Find the Maya installation paths using _winreg. The path to the python
+    executable is extended from the installation path. The dictionary is made
+    up of keys that are made up of the Maya versions found installed and a 
+    path to the executable of that version of Maya as a value.
+    
+    :return: Windows maya python executables
+    :rtype: dict
+    """
     # variables
     maya_pythons = {}
     

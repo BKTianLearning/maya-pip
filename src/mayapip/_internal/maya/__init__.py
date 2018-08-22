@@ -12,6 +12,10 @@ elif platform.system() == "Linux":
     
     
 def has_python_executables():
+    """
+    :return: If python executables are found
+    :rtype: bool
+    """
     return True \
         if get_python_executables and get_python_executables() \
         else False

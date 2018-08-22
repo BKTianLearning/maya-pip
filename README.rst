@@ -10,7 +10,7 @@ Using pip:
 
 ::
 
-    pip install https://github.com/robertjoosten/maya-pip/archive/v0.1.0.tar.gz
+    pip install https://github.com/robertjoosten/maya-pip/archive/v0.1.1.tar.gz
 
 If you prefer to install from source code use:
 
@@ -53,8 +53,12 @@ Installing an older version of pyyaml on Maya 2017.
 	>>> Successfully installed pyyaml-3.11
 	
 	# in maya 2017
-	import yaml; print yaml.__version__
-	>>> 3.11
+	import yaml 
+    
+    print yaml.__version__
+    print yaml.__file__
+    >>> 3.11
+    >>> C:\Program Files\Autodesk\Maya2017\Python\lib\site-packages\yaml\__init__.pyc
 
 Installing the latest version of pyyaml on Maya 2018.
 
@@ -64,8 +68,12 @@ Installing the latest version of pyyaml on Maya 2018.
 	>>> Successfully installed pyyaml-3.13
 	
 	# in maya 2018
-	import yaml; print yaml.__version__
-	>>> 3.13
+	import yaml
+    
+    print yaml.__version__
+	print yaml.__file__
+    >>> 3.13
+    >>> C:\Program Files\Autodesk\Maya2018\Python\lib\site-packages\yaml\__init__.pyc
 	
 Uninstalling pyyaml from Maya 2018, leaving the Maya 2017 environment intact.
 	
