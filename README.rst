@@ -49,12 +49,12 @@ Installing an older version of pyyaml on Maya 2017.
 
 ::
 
-	mayapip install pyyaml==3.11 --maya_version=2017
-	>>> Successfully installed pyyaml-3.11
-	
-	# in maya 2017
-	import yaml 
-    
+    mayapip install pyyaml==3.11 --maya_version=2017
+    >>> Successfully installed pyyaml-3.11
+
+    # in maya 2017
+    import yaml 
+
     print yaml.__version__
     print yaml.__file__
     >>> 3.11
@@ -64,14 +64,14 @@ Installing the latest version of pyyaml on Maya 2018.
 
 ::
 
-	mayapip install pyyaml --maya_version=2018
-	>>> Successfully installed pyyaml-3.13
-	
-	# in maya 2018
-	import yaml
-    
+    mayapip install pyyaml --maya_version=2018
+    >>> Successfully installed pyyaml-3.13
+
+    # in maya 2018
+    import yaml
+
     print yaml.__version__
-	print yaml.__file__
+    print yaml.__file__
     >>> 3.13
     >>> C:\Program Files\Autodesk\Maya2018\Python\lib\site-packages\yaml\__init__.pyc
 	
@@ -79,7 +79,7 @@ Uninstalling pyyaml from Maya 2018, leaving the Maya 2017 environment intact.
 	
 ::
 
-	mayapip uninstall pyyaml --maya_version=2018
-	>>> Successfully uninstalled PyYAML-3.13
+    mayapip uninstall pyyaml --maya_version=2018
+    >>> Successfully uninstalled PyYAML-3.13
 	
 .. _pip: https://github.com/pypa/pip
