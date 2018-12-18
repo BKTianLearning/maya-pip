@@ -6,7 +6,7 @@ import sys
 import argparse
 import subprocess
 
-from pip._internal import parseopts
+from pip._internal import parse_command
 from mayapip._internal import maya
 
 
@@ -14,7 +14,7 @@ def main(args=None):
     """
     Main function will find the right maya python executable and pip install 
     using the maya python executable all of the remaining commands in pip.
-    The arguments will be processed using the parseopts function that comes
+    The arguments will be processed using the parse_command function that comes
     with pip. This will give you a detailed breakdown of any potential error.
     
     The --maya_version argument is not documented when using the -h argument,
@@ -33,7 +33,7 @@ def main(args=None):
     maya_args, pip_args = parser.parse_known_args(args)
         
     # validate pip arguments
-    parseopts(pip_args)
+    parse_command(pip_args)
     
     # get maya python executables
     python_executables = maya.get_python_executables()
